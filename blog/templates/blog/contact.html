@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+    <div style="margin-left: 5%;margin-top: 6%;">
+       
+        <div class="cartouche">
+            <div style="float: left;">
+                <img src="{% static 'images/Thierry.png' %}" alt="Thierry président" class="imagePresantaion"> 
+            </div>
+            <div>
+                <span class="Article_Titre">Thierry Yoig-Naaba Tapsoba<br></span>
+                <span id="T2" style="color: grey; font-size: larger; margin-left: 5% "><br></span>
+                <p class="textPresantation"></p>
+            </div>
+        </div>
+
+        <div class="cartouche" style=" margin-top: 16%; margin-bottom: 6%">
+            <div style="float: left">
+                <img src="{% static 'images/Lydie.png' %}" alt="Lydie Hennequin" class="imagePresantaion" > 
+            </div>
+            <div>
+                <span class="Article_Titre">Lydie Hennequin<br></span>
+                <span id="T3"style="color: grey; font-size: larger; margin-left: 5% "><br></span>
+                <p class="textPresantation" style="margin-left:225px; width:60%;margin-bottom: 30%;"></p>
+            </div>
+        </div>
+
+    
+    </div>
+{% endblock %}

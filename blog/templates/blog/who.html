@@ -1,0 +1,37 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+    <div style="margin-left: 5%;margin-top: 3%;">
+        <span id="T1" class="Article_Titre Titre" style="margin-top: 5%;" ><br></span>
+        <p id="P1" class="paragraphe"></p>
+
+        <div class="cartouche">
+            <div style="float: left;">
+                <img src="{% static 'images/Thierry.png' %}" alt="Thierry président" class="imagePresantaion"> 
+            </div>
+            <div>
+                <span class="Article_Titre">Thierry Yoig-Naaba Tapsoba<br></span>
+                <span id="T2" style="color: grey; font-size: larger; margin-left: 5% "><br></span>
+                <p id="P2" class="textPresantation"></p>
+            </div>
+        </div>
+
+        <div class="cartouche" style=" margin-top: 6%; margin-bottom: 6%">
+            <div style="float: left">
+                 <img src="{% static 'images/Lydie.png' %}" alt="Lydie Hennequin" class="imagePresantaion"> 
+            </div>
+            <div >
+                <span class="Article_Titre">Lydie Hennequin<br></span>
+                <span id="T3"style="color: grey; font-size: larger; margin-left: 5% "><br></span>
+                <p id="P3" style="margin-left:225px; width:60%"></p>
+            </div>
+        </div>
+
+        <span id="T4" class="Article_Titre Titre"><br></span>
+        <p id="P4" class="paragraphe"></p>
+        <span id="T5"class="Article_Titre Titre">Où sommes nous ?<br></span>
+        <p></p>
+        <span id="P5" class="paragraphe" style="margin-right: 0px;"></span><a href="https://www.google.com/maps/search/saaba+burkina+faso/@12.3182992,-1.5676164,11z/data=!3m1!4b1">SAABA</a><p class="paragraphe"id="P6" style="margin-top: 0px;"></p>
+    
+    </div>
+{% endblock %}

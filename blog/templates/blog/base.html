@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bulma.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <script type="text/javascript"  src="{% static 'js/Tools.js' %}"></script>
+        <link rel="shortcut icon" href="{% static 'images/logo.ico' %}">
+        <title>S-K {{title}}</title>
+        </head>
+    <body onload="lang('{{lang}}')">
+        <div class="bg">
+            <div class="titre">
+              <span class="border">SONGY-KAORENGO</span><br>
+            </div>
+        </div>
+        <nav class="Navi">
+            <div id="logo"> <img src="{% static 'images/logo.png' %}" alt="logo" id="logo" ></div>
+            <hr class="Separateur_v">
+            <div class="element"><button class=" button is-text is-inverted is-outlined" id="onglet" onclick="redir(''+'/?lang='+'{{lang}}')";><span id="Home"></span></button></div>
+            <hr class="Separateur_v">
+            <div class="element"><button class=" button is-text is-inverted is-outlined"  id="onglet" onclick="redir('/who'+'/?lang='+'{{lang}}')";><span id="Who"></span></button></div>
+            <hr class="Separateur_v">
+            <div class="element"> <button class=" button is-text is-inverted is-outlined" id="onglet" onclick="redir(''+'/?lang='+'{{lang}}')";><span id="Contact"></span></button></div>
+            <hr class="Separateur_v">
+            <div class="element"><a href ="https://www.leetchi.com/"><button class="button is-light" id="onglet" style="color:grey;" ><span id="Tips"></span></button></a></div></div>
+            
+            <div class="element control has-icons-left ">
+                <p class="buttons">
+                    <button class="button" style="height: 18px; width: 20px; " onclick="redir('{{path}}'+'/?lang=Fra')" >
+                      <span class="icon is-small" style="height: 16px; width: 20px; color:black; margin-left: 1px;">&#x1F1EB;&#x1F1F7;</span>
+                    </button>
+                    <button class="button flag-button" style="height: 18px; width: 20px;" onclick="redir('{{path}}'+'/?lang=Eng')">
+                      <span class="icon is-small flag"style="height: 16px; width: 20px; color:black ; margin-left: 1px; ">&#x1F1FA;&#x1F1F8;</span>
+                    </button>
+                    <button class="button flag-button" style="height: 18px; width: 20px;" onclick="redir('{{path}}'+'/?lang=Esp')">
+                      <span class="icon is-small flag" style="height: 16px; width: 20px; color:black ; margin-left: 1px; ">&#x1F1EA;&#x1F1F8;</span>
+                    </button>
+                    <button class="button flag-button" style="height: 18px; width: 20px;" onclick="redir('{{path}}'+'/?lang=Ita')" >
+                      <span class="icon is-small flag"style="height: 16px; width: 20px; color:black ; margin-left: 1px; " >&#x1F1EE;&#x1F1F9;</span>
+                    </button>
+                </p>
+                
+        </nav>
+
+        <div style=" width: 100%;">
+            {% block content %}
+            
+            {% endblock %}
+        </div>
+        
+     
+    </body>
+
+    <footer>
+        <div id="Made_by">
+            <span id="M_b_text"></span> 
+            <a href="//www.eilco-ulco.fr/"><img id="M_b_img" src="{% static 'images/eilco.png' %}""></a>
+            
+        </div>
+        
+    </footer>
+</html>
